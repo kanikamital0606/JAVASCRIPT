@@ -6,12 +6,13 @@
 
 window.onload =function(){
     // acess line 7 of html 
-    let para=document.querySelector("#demo")
+    let xyz = document.querySelector("#demo")
     const ans = kanika()
-    para.append(`Today is       :   ${ans}`)
+    xyz.append(`Today is       :   ${ans}`)
 }
 
-const kanika=function (){
+
+const kanika = function (){
     switch (new Date().getDay()) {
         case 0:
             day = "Sunday";
@@ -19,6 +20,7 @@ const kanika=function (){
         case 1:
             day = "Monday";
             return day;
+
         case 2:
             day = "Tuesday";
             return day;
@@ -35,7 +37,6 @@ const kanika=function (){
             day = "Saturday";
             return day;
     }
-    
 }
 
 
